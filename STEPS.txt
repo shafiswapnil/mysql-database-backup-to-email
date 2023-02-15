@@ -1,0 +1,37 @@
+	WORKS
+-------------------------------------------------------------------------
+	-> run backup
+	-> detect file name
+	-> send email
+
+	-> one directory required database-backup-file
+
+	-> php ini edit for website
+		[Date]
+		date.timezone=Asia/Dhaka
+
+	-> PHPMailer
+		https://github.com/PHPMailer/PHPMailer
+		https://alexwebdevelop.com/phpmailer-tutorial/
+
+	-> No cache
+		$this->output->set_header("Expires: Tue, 01 Jan 2000 00:00:00 GMT");
+		$this->output->set_header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+		$this->output->set_header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+		$this->output->set_header("Cache-Control: post-check=0, pre-check=0", false);
+		$this->output->set_header("Pragma: no-cache");
+
+	-> RESOURCES
+		https://stackoverflow.com/questions/18737407/how-to-create-cron-job-using-php
+		https://serverfault.com/questions/695375/run-php-file-from-shell-script
+		https://stackoverflow.com/questions/5506913/bash-script-to-run-php-script
+		https://askubuntu.com/questions/839499/call-and-run-php-script-from-shell-script
+
+		https://www.google.com/search?q=write+sh+script+to+run+php+file&oq=write+sh+script+to+run+php+file
+
+	-> TWEAKS
+		chmod +x test.php
+
+	-> hosting credentials
+	
+		
