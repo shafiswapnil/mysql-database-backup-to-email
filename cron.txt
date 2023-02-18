@@ -1,0 +1,2 @@
+SHELL="/usr/local/cpanel/bin/jailshell"
+* * * * * /usr/local/bin/php /home2/shafiswa/public_html/autobackup/index.php &> /dev/null
